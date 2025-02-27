@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Póliza"
+        android:textSize="22sp"
+        android:textColor="#9C27B0"
+        android:padding="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/et_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:background="#E1F5FE"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/et_valor_alquiler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_valor_alquiler"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Valor del Auto"
+        android:inputType="numberDecimal"
+        android:background="#E1F5FE"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/et_numero_acci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_nombre"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_numero_acci"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Número de Accidentes"
+        android:inputType="number"
+        android:background="#E1F5FE"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/sp_modelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_valor_alquiler"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/sp_modelo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="#E1F5FE"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/sp_edad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_numero_acci"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/sp_edad"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="#E1F5FE"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sp_modelo"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Costo de la Póliza: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@id/bt_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sp_edad"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/bt_limpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_resultado"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/bt_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/bt_salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_calcular"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/bt_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textStyle="bold"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_limpiar"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
