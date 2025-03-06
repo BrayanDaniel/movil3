@@ -1,0 +1,1 @@
+C:\AppMoviles\pruebafirebase\build\app\intermediates\cxx\RelWithDebInfo\3p674s22\obj\x86_64

@@ -1,0 +1,2 @@
+C:/AppMoviles/pruebafirebase/android/app/.cxx/RelWithDebInfo/3p674s22/x86_64/CMakeFiles/edit_cache.dir
+C:/AppMoviles/pruebafirebase/android/app/.cxx/RelWithDebInfo/3p674s22/x86_64/CMakeFiles/rebuild_cache.dir

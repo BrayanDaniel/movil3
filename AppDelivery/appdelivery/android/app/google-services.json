@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434118252750",
+    "project_id": "chattiemporeal-e454e",
+    "storage_bucket": "chattiemporeal-e454e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434118252750:android:e74dbd2423423b0ca2989f",
+        "android_client_info": {
+          "package_name": "com.example.pruebafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKVqU7flZXJdYoSyAROm8ncwoPgx7VK9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
